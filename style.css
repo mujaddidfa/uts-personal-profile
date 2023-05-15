@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    color: #000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f5f5;
+}
+
+header {
+    width: 100%;
+    background-color: #ccc;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+header .header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+header .header .header-text {
+    padding: 50px 50px;
+}
+
+header .header .header-text .im {
+    font-weight: 500;
+    font-size: 50px;
+}
+
+header .header .header-text .name {
+    font-size: 50px;
+}
+
+header .header .header-text .name span {
+    color: midnightblue;
+}
+
+header .header .header-text p {
+    font-size: 30px;
+    margin: 50px 0;
+}
+
+header .header .header-text hr {
+    width: 50%;
+    height: 4px;
+    background: #000;
+    margin: 20px 0;
+}
+
+header .header .header-img {
+    height: 450px;
+}
+
+header .header .header-img img {
+    height: 100%;
+}
+
+header nav {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background: midnightblue;
+}
+
+header nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #ddd;
+}
+
+header nav ul li a {
+    font-size: large;
+    font-weight: bolder;
+}
+
+header nav ul li a:hover {
+    color: #fff;
+}
+
+header nav ul li a:after {
+    content: '';
+    display: block;
+    padding-bottom: 0.1rem;
+    border-bottom: 0.2rem solid #fff;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+header nav ul li a:hover:after {
+    transform: scaleX(0.5);
+}
+
+header nav ul li a:active {
+    color: black;
+}
+
+header nav ul li a:active:after {
+    transform: scaleX(1);
+    border-bottom: 0.2rem solid black;
+}
+
+header nav ul li .vl {
+    border-left: 2px solid #ddd;
+    height: 30px;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+main aside {
+    flex: 1;
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0 25px 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+main aside .photo {
+    text-align: center;
+}
+
+main aside .photo img {
+    width: 100%;
+}
+
+main aside .description {
+    padding: 25px;
+}
+
+main aside .description ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+main aside .description ul li img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+main aside .description .skills {
+    margin-top: 30px;
+}
+
+main aside .description .language {
+    margin-top: 30px;
+}
+
+main article {
+    width: 70%;
+    flex: 3;
+    margin: 25px 0 0 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+main article section {
+    margin: 30px 0 0 30px;
+    font-size: larger;
+    margin: 0 25px 25px 0px;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+main article section p {
+    margin: 10px 0;
+}
+
+main article section ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+main article section ul li span {
+    float: right;
+}
+
+main article section ul li img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+main article section hr {
+    width: 100px;
+    height: 3px;
+    background: #000;
+    margin: 20px 0;
+}
+
+main article #contact ul li {
+    border: 3px solid #ccc;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+main article #contact ul li img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+main article #contact ul li:hover {
+    transform: translateY(-4px);
+    border: 3px solid midnightblue;
+    box-shadow: 0px 5px 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    background-color: midnightblue;
+    padding: 10px;
+}
+
+footer p {
+    color: #ddd;
+}
+
+@media (max-width: 750px) {
+    header .header .header-text {
+        padding: 50px 0px 50px 50px;
+    }
+    header .header .header-img {
+        height: 300px;
+        align-self: flex-end;
+    }
+    
+    header .header .header-img img {
+        height: 100%;
+    }
+}
