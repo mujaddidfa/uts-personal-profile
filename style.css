@@ -35,6 +35,7 @@ header .header {
 
 header .header .header-text {
     padding: 50px 50px;
+    flex: 1;
 }
 
 header .header .header-text .im {
@@ -82,6 +83,7 @@ header .header .header-text button:hover {
 header .header .header-img {
     height: 450px;
     align-self: flex-end;
+    justify-content: flex-end;
 }
 
 header .header .header-img img {
