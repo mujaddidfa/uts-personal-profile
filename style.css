@@ -196,7 +196,6 @@ main aside .description .language {
 }
 
 main article {
-    width: 70%;
     flex: 3;
     margin: 25px 0 0 25px;
     display: flex;
