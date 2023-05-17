@@ -10,6 +10,8 @@
 
 html {
     scroll-behavior: smooth;
+    width: fit-content;
+    height: fit-content;
 }
 
 body {
@@ -50,7 +52,7 @@ header .header .header-text .name span {
 
 header .header .header-text p {
     font-size: 30px;
-    margin: 50px 0;
+    margin: 35px 0;
 }
 
 header .header .header-text hr {
@@ -60,8 +62,26 @@ header .header .header-text hr {
     margin: 20px 0;
 }
 
+header .header .header-text button {
+    width: 200px;
+    height: 50px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+header .header .header-text button:hover {
+    background: midnightblue;
+    color: #fff;
+}
+
 header .header .header-img {
     height: 450px;
+    align-self: flex-end;
 }
 
 header .header .header-img img {
@@ -249,6 +269,7 @@ footer p {
     header .header .header-text {
         padding: 50px 0px 50px 50px;
     }
+
     header .header .header-img {
         height: 300px;
         align-self: flex-end;
